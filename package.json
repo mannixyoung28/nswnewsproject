@@ -1,0 +1,35 @@
+{
+  "name": "nswautoproject",
+  "version": "1.0.0",
+  "description": "Sample Test Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/protractor/bin/protractor conf/conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mannixyoung28@github.com/mannixyoung28/nswautoproject.git"
+  },
+  "author": "Mannix Young (mannix.young@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mannixyoung28/nswautoproject/issues"
+  },
+  "homepage": "https://github.com/mannixyoung28/nswautoproject#readme",
+  "devDependencies": {
+    "cucumber": "^4.2.1",
+    "cucumber-html-reporter": "^4.0.5",
+    "cucumber-junit": "^1.7.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-protractor": "^1.41.1",
+    "protractor-cucumber-framework": "^6.2.1"
+  },
+  "dependencies": {
+    "browserstack-local": "^1.4.8",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "protractor": "^7.0.0",
+    "selenium-webdriver": "^4.0.0-beta.3"
+  }
+}
