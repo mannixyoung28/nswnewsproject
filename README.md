@@ -1,7 +1,7 @@
 # nswnewsproject
 
 1. Open new command line window
-2. Install NodeJS version (v8.11.1)
+2. Install NodeJS
 3. Install npm
 4. Run "npm install -g protractor"
 5. Run "npm install -g webdriver-manager"
