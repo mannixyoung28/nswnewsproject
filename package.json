@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mannixyoung28/nswautoproject#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "cucumber": "^4.2.1",
     "cucumber-html-reporter": "^4.0.5",
     "cucumber-junit": "^1.7.1",

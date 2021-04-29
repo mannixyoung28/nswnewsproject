@@ -1,0 +1,90 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "News Topic Filter",
+    "line": 1,
+    "id": "news-topic-filter",
+    "tags": [],
+    "uri": "features\\feature_test.feature",
+    "elements": [
+      {
+        "id": "news-topic-filter;verify-1-topic-filter-functionality",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify 1 topic filter functionality",
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open \"https://www.nsw.gov.au/news\"",
+            "match": {
+              "location": "step_definitions\\steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12702000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I select topics \"Awards\"",
+            "match": {
+              "location": "step_definitions\\steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on Apply",
+            "match": {
+              "location": "step_definitions\\steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify \"Awards\" topic filter results",
+            "match": {
+              "location": "step_definitions\\steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

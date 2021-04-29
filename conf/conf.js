@@ -1,6 +1,6 @@
 exports.config = {
-    seleniumAddress: 'http://localhost:4444/wd/hub',
-    getPageTimeout: 60000,
+    seleniumAddress: 'http://localhost:4444/wd/hub',  //selenium server
+    getPageTimeout: 60000,                            //60 secs
     framework: 'custom',    
     frameworkPath: require.resolve('protractor-cucumber-framework'),    
     capabilities: {
@@ -10,14 +10,14 @@ exports.config = {
     specs: [
       '../features/*.feature'
     ],
-    SELENIUM_PROMISE_MANAGER: false,
+    SELENIUM_PROMISE_MANAGER: true,
     
     onPrepare: function () {
       browser.waitForAngularEnabled(false);
     },    
     cucumberOpts: {
       require: ['../step_definitions/*.js'],
-      tags: ['@TEST'],
+      tags: ['@SmokeTest'],
       format: 'json:reports/TestResults.json',
       profile: false,
       'no-source': true
